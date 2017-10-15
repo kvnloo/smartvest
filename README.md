@@ -11,7 +11,7 @@
 ![Mockup 4](./mockup/04.png)
 
 ## Screens
-![Screen 1](./Screens/Log-In Page.png)
+![Screen 1](./Screens/Log-In-Page.png)
 ![Screen 2](./Screens/Dashboard-Menu-Open.png)
 ![Screen 3](./Screens/Dashboard-Menu-Closed.png)
 ![Screen 4](./Screens/Heart-Info.png)
