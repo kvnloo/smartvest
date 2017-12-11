@@ -1,0 +1,6 @@
+framework module Pods_Smartshirt_Companion_AppUITests {
+  umbrella header "Pods-Smartshirt Companion AppUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

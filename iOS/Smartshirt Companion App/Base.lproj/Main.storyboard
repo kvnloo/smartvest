@@ -9,6 +9,11 @@
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-Regular.ttf">
+            <string>Montserrat-Regular</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--Login View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -17,12 +22,348 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SMARTSHIRT RESEARCH APP" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oP1-Ck-pLq">
+                                <rect key="frame" x="58" y="200" width="260" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="260" id="O5D-Za-jbO"/>
+                                    <constraint firstAttribute="height" constant="150" id="kNb-EH-uR1"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="36"/>
+                                <color key="textColor" red="0.98823529409999999" green="0.98823529409999999" blue="0.98823529409999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wVJ-sS-8bz" customClass="GeneralUIButton" customModule="Smartshirt_Companion_App" customModuleProvider="target">
+                                <rect key="frame" x="62.5" y="551" width="250" height="42"/>
+                                <color key="backgroundColor" red="0.23921568627450979" green="0.25098039215686274" blue="0.35686274509803922" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="42" id="Fsh-bX-rLL"/>
+                                    <constraint firstAttribute="width" constant="250" id="VFL-eN-Gpd"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="12"/>
+                                <state key="normal" title="Login">
+                                    <color key="titleColor" red="0.98823529409999999" green="0.98823529409999999" blue="0.98823529409999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="21"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="Ks5-1C-jPU" kind="show" id="N8T-xe-du5"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email Address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hUQ-vs-2hr">
+                                <rect key="frame" x="62.5" y="400" width="250" height="42"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="42" id="6pa-oe-gwV"/>
+                                    <constraint firstAttribute="width" constant="250" id="giK-JQ-OZW"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="12"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="a2V-jS-Qzi">
+                                <rect key="frame" x="62.5" y="450" width="250" height="42"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="250" id="Li3-ey-VRm"/>
+                                    <constraint firstAttribute="height" constant="42" id="hfH-du-FgP"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="12"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jrf-hm-pIg" customClass="GeneralUIHyperLink" customModule="Smartshirt_Companion_App" customModuleProvider="target">
+                                <rect key="frame" x="58" y="601" width="117" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="117" id="fel-rC-Fa7"/>
+                                    <constraint firstAttribute="height" constant="24" id="rIg-sd-DKd"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="10"/>
+                                <state key="normal" title="Don't Have an Account?">
+                                    <color key="titleColor" red="0.98823529409999999" green="0.98823529409999999" blue="0.98823529409999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yRX-LU-GnX" customClass="GeneralUIHyperLink" customModule="Smartshirt_Companion_App" customModuleProvider="target">
+                                <rect key="frame" x="200.5" y="500" width="112" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="24" id="WxY-rU-9RD"/>
+                                    <constraint firstAttribute="width" constant="112" id="ZAU-oR-dzA"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="10"/>
+                                <state key="normal" title="Forgot Your Password?">
+                                    <color key="titleColor" red="0.98823529409999999" green="0.98823529409999999" blue="0.98823529409999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.46274509803921571" blue="0.36862745098039218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="wVJ-sS-8bz" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="4bc-m9-KSu"/>
+                            <constraint firstItem="jrf-hm-pIg" firstAttribute="top" secondItem="wVJ-sS-8bz" secondAttribute="bottom" constant="8" id="LZi-YC-btq"/>
+                            <constraint firstItem="oP1-Ck-pLq" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="180" id="Mod-TE-5bT"/>
+                            <constraint firstItem="yRX-LU-GnX" firstAttribute="top" secondItem="a2V-jS-Qzi" secondAttribute="bottom" constant="8" id="UZc-iL-1JD"/>
+                            <constraint firstItem="oP1-Ck-pLq" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="VOE-Xt-WEI"/>
+                            <constraint firstItem="a2V-jS-Qzi" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="ce8-2e-Jfm"/>
+                            <constraint firstItem="hUQ-vs-2hr" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="380" id="fe6-3w-JhX"/>
+                            <constraint firstItem="yRX-LU-GnX" firstAttribute="trailing" secondItem="a2V-jS-Qzi" secondAttribute="trailing" id="fyK-61-MDS"/>
+                            <constraint firstItem="a2V-jS-Qzi" firstAttribute="top" secondItem="hUQ-vs-2hr" secondAttribute="bottom" constant="8" id="hDG-vp-Vsm"/>
+                            <constraint firstItem="hUQ-vs-2hr" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="heP-gK-DEG"/>
+                            <constraint firstItem="jrf-hm-pIg" firstAttribute="leading" secondItem="oP1-Ck-pLq" secondAttribute="leading" id="rX6-CL-LFY"/>
+                            <constraint firstItem="wVJ-sS-8bz" firstAttribute="top" secondItem="yRX-LU-GnX" secondAttribute="bottom" constant="27" id="vMy-eW-mOL"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="25" y="27"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="8JZ-LY-5Hg">
+            <objects>
+                <tabBarController id="Ks5-1C-jPU" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="Nwm-l3-wUq"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="cjG-jY-hpd">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="fSx-Fl-VPI" kind="relationship" relationship="viewControllers" id="DD4-rt-6hR"/>
+                        <segue destination="AdF-tc-UhI" kind="relationship" relationship="viewControllers" id="CWw-2k-8ta"/>
+                        <segue destination="bX3-sx-q4W" kind="relationship" relationship="viewControllers" id="ZHz-b8-mUu"/>
+                        <segue destination="2rd-Wd-Tiu" kind="relationship" relationship="viewControllers" id="Ubu-Xs-RwP"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rd2-oC-o77" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="804" y="27"/>
+        </scene>
+        <!--EVENT TAGGING-->
+        <scene sceneID="X9V-dM-f3y">
+            <objects>
+                <navigationController title="EVENT TAGGING" automaticallyAdjustsScrollViewInsets="NO" id="AdF-tc-UhI" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="EVENT TAGGING" id="QIn-Am-p7v"/>
+                    <toolbarItems/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="G3a-lH-DYG">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="aKC-Mm-4qH" kind="relationship" relationship="rootViewController" id="iHi-bl-gmV"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aSo-fL-n1Y" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1588" y="-820"/>
+        </scene>
+        <!--Event Tagging View Controller-->
+        <scene sceneID="V8W-eK-iUl">
+            <objects>
+                <viewController id="aKC-Mm-4qH" customClass="EventTaggingViewController" customModule="Smartshirt_Companion_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="xRp-zU-la7">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00.00" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NSS-pX-ZAR">
+                                <rect key="frame" x="22.5" y="154" width="330" height="127"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="127" id="TI2-Ou-Zga"/>
+                                    <constraint firstAttribute="width" constant="330" id="zg0-Fk-hri"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="70"/>
+                                <color key="textColor" red="1" green="0.46274509803921571" blue="0.36862745098039218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="100" translatesAutoresizingMaskIntoConstraints="NO" id="YJX-6B-oRG">
+                                <rect key="frame" x="24" y="305" width="327" height="42"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y3u-fz-RDD" customClass="GeneralUIButton" customModule="Smartshirt_Companion_App" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="113.5" height="42"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="42" id="lU0-bw-tUG"/>
+                                        </constraints>
+                                        <state key="normal" title="Reset"/>
+                                        <connections>
+                                            <action selector="resetWithSender:" destination="aKC-Mm-4qH" eventType="touchUpInside" id="xgK-bI-yfM"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tgz-hx-17p" customClass="GeneralUIButton" customModule="Smartshirt_Companion_App" customModuleProvider="target">
+                                        <rect key="frame" x="213.5" y="0.0" width="113.5" height="42"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="42" id="jMj-ub-TSa"/>
+                                        </constraints>
+                                        <state key="normal" title="Start"/>
+                                        <connections>
+                                            <action selector="startWithSender:" destination="aKC-Mm-4qH" eventType="touchUpInside" id="dRb-i1-UkN"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="EVENT DETAILS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="djK-NH-luN">
+                                <rect key="frame" x="22.5" y="371" width="108" height="17.5"/>
+                                <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="14"/>
+                                <color key="textColor" red="1" green="0.46274509800000002" blue="0.36862745099999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lu5-Pd-THc">
+                                <rect key="frame" x="24" y="396.5" width="327" height="42"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="42" id="ouh-2w-exz"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ADDITIONAL COMMENTS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J0H-7e-yje">
+                                <rect key="frame" x="22" y="463" width="176.5" height="17.5"/>
+                                <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="14"/>
+                                <color key="textColor" red="1" green="0.46274509800000002" blue="0.36862745099999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="fwy-XR-PD6" firstAttribute="trailing" secondItem="lu5-Pd-THc" secondAttribute="trailing" constant="24" id="BWQ-9U-CKE"/>
+                            <constraint firstItem="NSS-pX-ZAR" firstAttribute="top" secondItem="fwy-XR-PD6" secondAttribute="top" constant="90" id="EMF-R7-fFT"/>
+                            <constraint firstItem="NSS-pX-ZAR" firstAttribute="centerX" secondItem="fwy-XR-PD6" secondAttribute="centerX" id="Erx-hV-h6A"/>
+                            <constraint firstItem="djK-NH-luN" firstAttribute="leading" secondItem="NSS-pX-ZAR" secondAttribute="leading" id="Xsx-By-fR4"/>
+                            <constraint firstItem="fwy-XR-PD6" firstAttribute="trailing" secondItem="YJX-6B-oRG" secondAttribute="trailing" constant="24" id="Y0m-pC-aID"/>
+                            <constraint firstItem="YJX-6B-oRG" firstAttribute="leading" secondItem="fwy-XR-PD6" secondAttribute="leading" constant="24" id="dje-AI-Ohw"/>
+                            <constraint firstItem="djK-NH-luN" firstAttribute="top" secondItem="y3u-fz-RDD" secondAttribute="bottom" constant="24" id="hY1-3a-usJ"/>
+                            <constraint firstItem="lu5-Pd-THc" firstAttribute="top" secondItem="djK-NH-luN" secondAttribute="bottom" constant="8" id="koj-ck-8UC"/>
+                            <constraint firstItem="J0H-7e-yje" firstAttribute="top" secondItem="lu5-Pd-THc" secondAttribute="bottom" constant="24" id="pb6-7o-g5T"/>
+                            <constraint firstItem="YJX-6B-oRG" firstAttribute="top" secondItem="NSS-pX-ZAR" secondAttribute="bottom" constant="24" id="ps4-wM-R9i"/>
+                            <constraint firstItem="J0H-7e-yje" firstAttribute="leading" secondItem="djK-NH-luN" secondAttribute="leading" id="sUJ-yM-orf"/>
+                            <constraint firstItem="lu5-Pd-THc" firstAttribute="leading" secondItem="fwy-XR-PD6" secondAttribute="leading" constant="24" id="uFk-6z-WGh"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="fwy-XR-PD6"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="BQl-mk-Mdc"/>
+                    <connections>
+                        <outlet property="anchorView" destination="lu5-Pd-THc" id="dll-OF-cK6"/>
+                        <outlet property="displayTimeLabel" destination="NSS-pX-ZAR" id="gXs-Ir-Odi"/>
+                        <outlet property="toggleButton" destination="tgz-hx-17p" id="KXk-vr-lAt"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vJi-cZ-YSy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2366" y="-821"/>
+        </scene>
+        <!--LOG-->
+        <scene sceneID="KHe-0t-Tcp">
+            <objects>
+                <navigationController title="LOG" automaticallyAdjustsScrollViewInsets="NO" id="bX3-sx-q4W" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="LOG" id="ELN-fU-Qbc"/>
+                    <toolbarItems/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="4za-CX-sQu">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="CcX-P9-lB8" kind="relationship" relationship="rootViewController" id="Kbr-t7-fRl"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ov8-70-FCj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1588" y="27"/>
+        </scene>
+        <!--EQUIPMENT-->
+        <scene sceneID="Kcw-FH-dZa">
+            <objects>
+                <navigationController title="EQUIPMENT" automaticallyAdjustsScrollViewInsets="NO" id="fSx-Fl-VPI" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="EQUIPMENT" id="2TG-P3-Bjz"/>
+                    <toolbarItems/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="9YW-BA-uPF">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Re4-SB-ZlY" kind="relationship" relationship="rootViewController" id="Mda-Np-mJz"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gYE-HM-rBT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1588" y="-1623"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="SOc-Yn-8aG">
+            <objects>
+                <viewController id="Re4-SB-ZlY" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="xGn-Vb-FJL">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="6aA-7e-wdS"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="B2h-Bf-qDx"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ed5-RM-iaA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2366" y="-1623"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="DqR-5w-RoK">
+            <objects>
+                <viewController id="CcX-P9-lB8" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ddG-yq-Dzy">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="oqp-kr-WwL"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="VqI-Mv-CJv"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="biB-4q-Mah" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2366" y="27"/>
+        </scene>
+        <!--SETTINGS-->
+        <scene sceneID="iOf-fb-RGE">
+            <objects>
+                <navigationController title="SETTINGS" automaticallyAdjustsScrollViewInsets="NO" id="2rd-Wd-Tiu" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="SETTINGS" id="zDJ-cp-TWe"/>
+                    <toolbarItems/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="atE-tJ-RIP">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Td9-lp-19a" kind="relationship" relationship="rootViewController" id="6Dp-bS-MK3"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9b3-Lz-W6P" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1588" y="882"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="kcA-1e-oYw">
+            <objects>
+                <viewController id="Td9-lp-19a" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tC7-mS-ZEI">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="dUg-va-iOk"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="J6m-Sn-40w"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nq0-q8-JZg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2366" y="882"/>
         </scene>
     </scenes>
 </document>

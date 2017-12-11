@@ -17,12 +17,14 @@ struct UX {
      */
     struct Colors {
         
-        /// The primary color from the color palette.
+        /// The Pale Red color from the color palette.
         static let paleRed:    UIColor = UIColor(red: 255.0/255.0, green: 118.0/255.0,  blue: 94.0/255.0,  alpha: 1.0)
-        /// The secondary color from the color palette.
+        /// The Light Yellow color from the color palette.
         static let lightYellow:  UIColor = UIColor(red: 255.0/255.0,  green: 198.0/255.0,  blue: 109.0/255.0,  alpha: 1.0)
-        /// The tint color from the color palette.
+        /// The Space Blue color from the color palette.
         static let spaceBlue:   UIColor = UIColor(red: 61.0/255.0,  green: 64.0/255.0,  blue: 91.0/255.0,  alpha: 1.0)
+        /// The Pale White color from the color palette.
+        static let paleWhite:   UIColor = UIColor(red: 252.0/255.0,  green: 252.0/255.0,  blue: 252.0/255.0,  alpha: 1.0)
         
     }
     

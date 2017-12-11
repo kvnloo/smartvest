@@ -8,6 +8,27 @@
 
 /* Begin PBXBuildFile section */
 		0A3644F81FDE61EA0045C402 /* UX.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3644F71FDE61EA0045C402 /* UX.swift */; };
+		0A36450C1FDE6D550045C402 /* Montserrat-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0A3644FA1FDE6D550045C402 /* Montserrat-LightItalic.ttf */; };
+		0A36450D1FDE6D550045C402 /* Montserrat-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0A3644FB1FDE6D550045C402 /* Montserrat-Medium.ttf */; };
+		0A36450E1FDE6D550045C402 /* Montserrat-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0A3644FC1FDE6D550045C402 /* Montserrat-BoldItalic.ttf */; };
+		0A36450F1FDE6D550045C402 /* Montserrat-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0A3644FD1FDE6D550045C402 /* Montserrat-Light.ttf */; };
+		0A3645101FDE6D550045C402 /* Montserrat-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0A3644FE1FDE6D550045C402 /* Montserrat-ThinItalic.ttf */; };
+		0A3645111FDE6D550045C402 /* Montserrat-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0A3644FF1FDE6D550045C402 /* Montserrat-ExtraLight.ttf */; };
+		0A3645121FDE6D550045C402 /* Montserrat-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0A3645001FDE6D550045C402 /* Montserrat-Thin.ttf */; };
+		0A3645131FDE6D550045C402 /* Montserrat-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0A3645011FDE6D550045C402 /* Montserrat-Bold.ttf */; };
+		0A3645141FDE6D550045C402 /* Montserrat-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0A3645021FDE6D550045C402 /* Montserrat-MediumItalic.ttf */; };
+		0A3645151FDE6D550045C402 /* Montserrat-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0A3645031FDE6D550045C402 /* Montserrat-BlackItalic.ttf */; };
+		0A3645161FDE6D550045C402 /* Montserrat-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0A3645041FDE6D550045C402 /* Montserrat-SemiBold.ttf */; };
+		0A3645171FDE6D550045C402 /* Montserrat-ExtraLightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0A3645051FDE6D550045C402 /* Montserrat-ExtraLightItalic.ttf */; };
+		0A3645181FDE6D550045C402 /* Montserrat-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0A3645061FDE6D550045C402 /* Montserrat-ExtraBold.ttf */; };
+		0A3645191FDE6D550045C402 /* Montserrat-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0A3645071FDE6D550045C402 /* Montserrat-Black.ttf */; };
+		0A36451A1FDE6D550045C402 /* Montserrat-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0A3645081FDE6D550045C402 /* Montserrat-Regular.ttf */; };
+		0A36451B1FDE6D550045C402 /* Montserrat-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0A3645091FDE6D550045C402 /* Montserrat-Italic.ttf */; };
+		0A36451C1FDE6D550045C402 /* Montserrat-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0A36450A1FDE6D550045C402 /* Montserrat-SemiBoldItalic.ttf */; };
+		0A36451D1FDE6D550045C402 /* Montserrat-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0A36450B1FDE6D550045C402 /* Montserrat-ExtraBoldItalic.ttf */; };
+		0A36451F1FDE6DF00045C402 /* GeneralUIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A36451E1FDE6DF00045C402 /* GeneralUIButton.swift */; };
+		0A3645211FDE6F880045C402 /* GeneralUIHyperLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3645201FDE6F880045C402 /* GeneralUIHyperLink.swift */; };
+		0A3645231FDE78CC0045C402 /* EventTaggingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3645221FDE78CC0045C402 /* EventTaggingViewController.swift */; };
 		0A69B9EF1FDE52DE009D25E4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A69B9EE1FDE52DE009D25E4 /* AppDelegate.swift */; };
 		0A69B9F11FDE52DE009D25E4 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A69B9F01FDE52DE009D25E4 /* LoginViewController.swift */; };
 		0A69B9F41FDE52DE009D25E4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A69B9F21FDE52DE009D25E4 /* Main.storyboard */; };
@@ -15,6 +36,9 @@
 		0A69B9F91FDE52DE009D25E4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A69B9F71FDE52DE009D25E4 /* LaunchScreen.storyboard */; };
 		0A69BA041FDE52DE009D25E4 /* Smartshirt_Companion_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A69BA031FDE52DE009D25E4 /* Smartshirt_Companion_AppTests.swift */; };
 		0A69BA0F1FDE52DE009D25E4 /* Smartshirt_Companion_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A69BA0E1FDE52DE009D25E4 /* Smartshirt_Companion_AppUITests.swift */; };
+		135271F3A022BCA4C05309FA /* Pods_Smartshirt_Companion_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 102A315CFE85572ABAACCF6B /* Pods_Smartshirt_Companion_App.framework */; };
+		BF45078050197F6016713F2A /* Pods_Smartshirt_Companion_AppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95F2247A9B56028C8A7844D5 /* Pods_Smartshirt_Companion_AppUITests.framework */; };
+		F5FAA151C5B48AA132C76EB0 /* Pods_Smartshirt_Companion_AppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47042A21C1AB9155476F7680 /* Pods_Smartshirt_Companion_AppTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +60,27 @@
 
 /* Begin PBXFileReference section */
 		0A3644F71FDE61EA0045C402 /* UX.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UX.swift; sourceTree = "<group>"; };
+		0A3644FA1FDE6D550045C402 /* Montserrat-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-LightItalic.ttf"; sourceTree = "<group>"; };
+		0A3644FB1FDE6D550045C402 /* Montserrat-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Medium.ttf"; sourceTree = "<group>"; };
+		0A3644FC1FDE6D550045C402 /* Montserrat-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-BoldItalic.ttf"; sourceTree = "<group>"; };
+		0A3644FD1FDE6D550045C402 /* Montserrat-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Light.ttf"; sourceTree = "<group>"; };
+		0A3644FE1FDE6D550045C402 /* Montserrat-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-ThinItalic.ttf"; sourceTree = "<group>"; };
+		0A3644FF1FDE6D550045C402 /* Montserrat-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-ExtraLight.ttf"; sourceTree = "<group>"; };
+		0A3645001FDE6D550045C402 /* Montserrat-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Thin.ttf"; sourceTree = "<group>"; };
+		0A3645011FDE6D550045C402 /* Montserrat-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Bold.ttf"; sourceTree = "<group>"; };
+		0A3645021FDE6D550045C402 /* Montserrat-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-MediumItalic.ttf"; sourceTree = "<group>"; };
+		0A3645031FDE6D550045C402 /* Montserrat-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-BlackItalic.ttf"; sourceTree = "<group>"; };
+		0A3645041FDE6D550045C402 /* Montserrat-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-SemiBold.ttf"; sourceTree = "<group>"; };
+		0A3645051FDE6D550045C402 /* Montserrat-ExtraLightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-ExtraLightItalic.ttf"; sourceTree = "<group>"; };
+		0A3645061FDE6D550045C402 /* Montserrat-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-ExtraBold.ttf"; sourceTree = "<group>"; };
+		0A3645071FDE6D550045C402 /* Montserrat-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Black.ttf"; sourceTree = "<group>"; };
+		0A3645081FDE6D550045C402 /* Montserrat-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Regular.ttf"; sourceTree = "<group>"; };
+		0A3645091FDE6D550045C402 /* Montserrat-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Italic.ttf"; sourceTree = "<group>"; };
+		0A36450A1FDE6D550045C402 /* Montserrat-SemiBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
+		0A36450B1FDE6D550045C402 /* Montserrat-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
+		0A36451E1FDE6DF00045C402 /* GeneralUIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralUIButton.swift; sourceTree = "<group>"; };
+		0A3645201FDE6F880045C402 /* GeneralUIHyperLink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralUIHyperLink.swift; sourceTree = "<group>"; };
+		0A3645221FDE78CC0045C402 /* EventTaggingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventTaggingViewController.swift; sourceTree = "<group>"; };
 		0A69B9EB1FDE52DE009D25E4 /* Smartshirt Companion App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Smartshirt Companion App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A69B9EE1FDE52DE009D25E4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0A69B9F01FDE52DE009D25E4 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -49,6 +94,15 @@
 		0A69BA0A1FDE52DE009D25E4 /* Smartshirt Companion AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Smartshirt Companion AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A69BA0E1FDE52DE009D25E4 /* Smartshirt_Companion_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Smartshirt_Companion_AppUITests.swift; sourceTree = "<group>"; };
 		0A69BA101FDE52DE009D25E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		102A315CFE85572ABAACCF6B /* Pods_Smartshirt_Companion_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Smartshirt_Companion_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		33630FF847E1DEC894F4943E /* Pods-Smartshirt Companion AppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Smartshirt Companion AppTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Smartshirt Companion AppTests/Pods-Smartshirt Companion AppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		47042A21C1AB9155476F7680 /* Pods_Smartshirt_Companion_AppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Smartshirt_Companion_AppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		513C0F1D2E8A2CEE9691D96C /* Pods-Smartshirt Companion AppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Smartshirt Companion AppTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Smartshirt Companion AppTests/Pods-Smartshirt Companion AppTests.release.xcconfig"; sourceTree = "<group>"; };
+		80FB4C359CA0E7142B1E12C6 /* Pods-Smartshirt Companion App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Smartshirt Companion App.release.xcconfig"; path = "Pods/Target Support Files/Pods-Smartshirt Companion App/Pods-Smartshirt Companion App.release.xcconfig"; sourceTree = "<group>"; };
+		95F2247A9B56028C8A7844D5 /* Pods_Smartshirt_Companion_AppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Smartshirt_Companion_AppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A76EAC046030506949F7C5E3 /* Pods-Smartshirt Companion AppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Smartshirt Companion AppUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Smartshirt Companion AppUITests/Pods-Smartshirt Companion AppUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		C3DA762D737E21D0EDB53A6A /* Pods-Smartshirt Companion App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Smartshirt Companion App.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Smartshirt Companion App/Pods-Smartshirt Companion App.debug.xcconfig"; sourceTree = "<group>"; };
+		F1CB4305725D701227199BFA /* Pods-Smartshirt Companion AppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Smartshirt Companion AppUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Smartshirt Companion AppUITests/Pods-Smartshirt Companion AppUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +110,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				135271F3A022BCA4C05309FA /* Pods_Smartshirt_Companion_App.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +118,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F5FAA151C5B48AA132C76EB0 /* Pods_Smartshirt_Companion_AppTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +126,39 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF45078050197F6016713F2A /* Pods_Smartshirt_Companion_AppUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0A3644F91FDE6D550045C402 /* Montserrat */ = {
+			isa = PBXGroup;
+			children = (
+				0A3644FA1FDE6D550045C402 /* Montserrat-LightItalic.ttf */,
+				0A3644FB1FDE6D550045C402 /* Montserrat-Medium.ttf */,
+				0A3644FC1FDE6D550045C402 /* Montserrat-BoldItalic.ttf */,
+				0A3644FD1FDE6D550045C402 /* Montserrat-Light.ttf */,
+				0A3644FE1FDE6D550045C402 /* Montserrat-ThinItalic.ttf */,
+				0A3644FF1FDE6D550045C402 /* Montserrat-ExtraLight.ttf */,
+				0A3645001FDE6D550045C402 /* Montserrat-Thin.ttf */,
+				0A3645011FDE6D550045C402 /* Montserrat-Bold.ttf */,
+				0A3645021FDE6D550045C402 /* Montserrat-MediumItalic.ttf */,
+				0A3645031FDE6D550045C402 /* Montserrat-BlackItalic.ttf */,
+				0A3645041FDE6D550045C402 /* Montserrat-SemiBold.ttf */,
+				0A3645051FDE6D550045C402 /* Montserrat-ExtraLightItalic.ttf */,
+				0A3645061FDE6D550045C402 /* Montserrat-ExtraBold.ttf */,
+				0A3645071FDE6D550045C402 /* Montserrat-Black.ttf */,
+				0A3645081FDE6D550045C402 /* Montserrat-Regular.ttf */,
+				0A3645091FDE6D550045C402 /* Montserrat-Italic.ttf */,
+				0A36450A1FDE6D550045C402 /* Montserrat-SemiBoldItalic.ttf */,
+				0A36450B1FDE6D550045C402 /* Montserrat-ExtraBoldItalic.ttf */,
+			);
+			name = Montserrat;
+			path = ../../assets/Montserrat;
+			sourceTree = "<group>";
+		};
 		0A69B9E21FDE52DE009D25E4 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +166,8 @@
 				0A69BA021FDE52DE009D25E4 /* Smartshirt Companion AppTests */,
 				0A69BA0D1FDE52DE009D25E4 /* Smartshirt Companion AppUITests */,
 				0A69B9EC1FDE52DE009D25E4 /* Products */,
+				99485CD81CC2C28161103AC6 /* Pods */,
+				353BFEDBCE6E19C8437D4608 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -102,7 +187,11 @@
 				0A69B9EE1FDE52DE009D25E4 /* AppDelegate.swift */,
 				0A69B9F01FDE52DE009D25E4 /* LoginViewController.swift */,
 				0A69B9F21FDE52DE009D25E4 /* Main.storyboard */,
+				0A3645221FDE78CC0045C402 /* EventTaggingViewController.swift */,
+				0A36451E1FDE6DF00045C402 /* GeneralUIButton.swift */,
+				0A3645201FDE6F880045C402 /* GeneralUIHyperLink.swift */,
 				0A3644F71FDE61EA0045C402 /* UX.swift */,
+				0A3644F91FDE6D550045C402 /* Montserrat */,
 				0A69B9F51FDE52DE009D25E4 /* Assets.xcassets */,
 				0A69B9F71FDE52DE009D25E4 /* LaunchScreen.storyboard */,
 				0A69B9FA1FDE52DE009D25E4 /* Info.plist */,
@@ -128,6 +217,29 @@
 			path = "Smartshirt Companion AppUITests";
 			sourceTree = "<group>";
 		};
+		353BFEDBCE6E19C8437D4608 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				102A315CFE85572ABAACCF6B /* Pods_Smartshirt_Companion_App.framework */,
+				47042A21C1AB9155476F7680 /* Pods_Smartshirt_Companion_AppTests.framework */,
+				95F2247A9B56028C8A7844D5 /* Pods_Smartshirt_Companion_AppUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		99485CD81CC2C28161103AC6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C3DA762D737E21D0EDB53A6A /* Pods-Smartshirt Companion App.debug.xcconfig */,
+				80FB4C359CA0E7142B1E12C6 /* Pods-Smartshirt Companion App.release.xcconfig */,
+				33630FF847E1DEC894F4943E /* Pods-Smartshirt Companion AppTests.debug.xcconfig */,
+				513C0F1D2E8A2CEE9691D96C /* Pods-Smartshirt Companion AppTests.release.xcconfig */,
+				A76EAC046030506949F7C5E3 /* Pods-Smartshirt Companion AppUITests.debug.xcconfig */,
+				F1CB4305725D701227199BFA /* Pods-Smartshirt Companion AppUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +247,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0A69BA131FDE52DE009D25E4 /* Build configuration list for PBXNativeTarget "Smartshirt Companion App" */;
 			buildPhases = (
+				BC347E0C60CC58259590C761 /* [CP] Check Pods Manifest.lock */,
 				0A69B9E71FDE52DE009D25E4 /* Sources */,
 				0A69B9E81FDE52DE009D25E4 /* Frameworks */,
 				0A69B9E91FDE52DE009D25E4 /* Resources */,
+				AB1153ACDA0BECFF85EB2A39 /* [CP] Embed Pods Frameworks */,
+				47310C8D810362AB2DABCF6D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -152,9 +267,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0A69BA161FDE52DE009D25E4 /* Build configuration list for PBXNativeTarget "Smartshirt Companion AppTests" */;
 			buildPhases = (
+				E5DB14FA96C4B0E27D71BEFF /* [CP] Check Pods Manifest.lock */,
 				0A69B9FB1FDE52DE009D25E4 /* Sources */,
 				0A69B9FC1FDE52DE009D25E4 /* Frameworks */,
 				0A69B9FD1FDE52DE009D25E4 /* Resources */,
+				025BA1B15CE05496440209BF /* [CP] Embed Pods Frameworks */,
+				4918F6AC248EF36A68D9C7BC /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -170,9 +288,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0A69BA191FDE52DE009D25E4 /* Build configuration list for PBXNativeTarget "Smartshirt Companion AppUITests" */;
 			buildPhases = (
+				38AA0082EF4FC66A83CA6639 /* [CP] Check Pods Manifest.lock */,
 				0A69BA061FDE52DE009D25E4 /* Sources */,
 				0A69BA071FDE52DE009D25E4 /* Frameworks */,
 				0A69BA081FDE52DE009D25E4 /* Resources */,
+				38FBBFDC00F7A5864D692C9E /* [CP] Embed Pods Frameworks */,
+				D9847250848C6160B39D170A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -235,8 +356,26 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A36451A1FDE6D550045C402 /* Montserrat-Regular.ttf in Resources */,
+				0A3645121FDE6D550045C402 /* Montserrat-Thin.ttf in Resources */,
+				0A3645191FDE6D550045C402 /* Montserrat-Black.ttf in Resources */,
+				0A36450F1FDE6D550045C402 /* Montserrat-Light.ttf in Resources */,
+				0A3645171FDE6D550045C402 /* Montserrat-ExtraLightItalic.ttf in Resources */,
+				0A36450E1FDE6D550045C402 /* Montserrat-BoldItalic.ttf in Resources */,
+				0A36451B1FDE6D550045C402 /* Montserrat-Italic.ttf in Resources */,
+				0A3645101FDE6D550045C402 /* Montserrat-ThinItalic.ttf in Resources */,
+				0A3645181FDE6D550045C402 /* Montserrat-ExtraBold.ttf in Resources */,
+				0A36450C1FDE6D550045C402 /* Montserrat-LightItalic.ttf in Resources */,
+				0A3645111FDE6D550045C402 /* Montserrat-ExtraLight.ttf in Resources */,
+				0A36450D1FDE6D550045C402 /* Montserrat-Medium.ttf in Resources */,
 				0A69B9F91FDE52DE009D25E4 /* LaunchScreen.storyboard in Resources */,
 				0A69B9F61FDE52DE009D25E4 /* Assets.xcassets in Resources */,
+				0A3645151FDE6D550045C402 /* Montserrat-BlackItalic.ttf in Resources */,
+				0A3645161FDE6D550045C402 /* Montserrat-SemiBold.ttf in Resources */,
+				0A3645131FDE6D550045C402 /* Montserrat-Bold.ttf in Resources */,
+				0A3645141FDE6D550045C402 /* Montserrat-MediumItalic.ttf in Resources */,
+				0A36451D1FDE6D550045C402 /* Montserrat-ExtraBoldItalic.ttf in Resources */,
+				0A36451C1FDE6D550045C402 /* Montserrat-SemiBoldItalic.ttf in Resources */,
 				0A69B9F41FDE52DE009D25E4 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -257,13 +396,154 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		025BA1B15CE05496440209BF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Smartshirt Companion AppTests/Pods-Smartshirt Companion AppTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		38AA0082EF4FC66A83CA6639 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		38FBBFDC00F7A5864D692C9E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Smartshirt Companion AppUITests/Pods-Smartshirt Companion AppUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		47310C8D810362AB2DABCF6D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Smartshirt Companion App/Pods-Smartshirt Companion App-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4918F6AC248EF36A68D9C7BC /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Smartshirt Companion AppTests/Pods-Smartshirt Companion AppTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AB1153ACDA0BECFF85EB2A39 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Smartshirt Companion App/Pods-Smartshirt Companion App-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BC347E0C60CC58259590C761 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		D9847250848C6160B39D170A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Smartshirt Companion AppUITests/Pods-Smartshirt Companion AppUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E5DB14FA96C4B0E27D71BEFF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		0A69B9E71FDE52DE009D25E4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A3645211FDE6F880045C402 /* GeneralUIHyperLink.swift in Sources */,
+				0A36451F1FDE6DF00045C402 /* GeneralUIButton.swift in Sources */,
 				0A69B9F11FDE52DE009D25E4 /* LoginViewController.swift in Sources */,
 				0A69B9EF1FDE52DE009D25E4 /* AppDelegate.swift in Sources */,
+				0A3645231FDE78CC0045C402 /* EventTaggingViewController.swift in Sources */,
 				0A3644F81FDE61EA0045C402 /* UX.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -428,6 +708,7 @@
 		};
 		0A69BA141FDE52DE009D25E4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C3DA762D737E21D0EDB53A6A /* Pods-Smartshirt Companion App.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -443,6 +724,7 @@
 		};
 		0A69BA151FDE52DE009D25E4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 80FB4C359CA0E7142B1E12C6 /* Pods-Smartshirt Companion App.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -458,6 +740,7 @@
 		};
 		0A69BA171FDE52DE009D25E4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 33630FF847E1DEC894F4943E /* Pods-Smartshirt Companion AppTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -475,6 +758,7 @@
 		};
 		0A69BA181FDE52DE009D25E4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 513C0F1D2E8A2CEE9691D96C /* Pods-Smartshirt Companion AppTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -492,6 +776,7 @@
 		};
 		0A69BA1A1FDE52DE009D25E4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A76EAC046030506949F7C5E3 /* Pods-Smartshirt Companion AppUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -508,6 +793,7 @@
 		};
 		0A69BA1B1FDE52DE009D25E4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F1CB4305725D701227199BFA /* Pods-Smartshirt Companion AppUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
