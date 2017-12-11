@@ -17,16 +17,26 @@ class EventTaggingViewController: UIViewController {
     @IBOutlet weak var toggleButton: GeneralUIButton!
     @IBOutlet var displayTimeLabel: UILabel!
     @IBOutlet weak var anchorView: UIView!
+    let dropDown = DropDown()
+    @IBOutlet weak var eventButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        let dropDown = DropDown()
+        
         
         // The view to which the drop down will appear on
         dropDown.anchorView = anchorView
-        // The list of items to display. Can be changed dynamically
+//        // The list of items to display. Can be changed dynamically
         dropDown.dataSource = ["Playtime", "Naptime", "Potty Time", "Diaper Change", "Nursing", "Bathtime", "Other"]
+        if let font = UX.Fonts.RegularFont {
+            dropDown.textFont = font
+            dropDown.textColor = UX.Colors.paleRed
+        }
+        
+        dropDown.selectionAction = { [unowned self] (index: Int, item: String) in
+            self.eventButton.setTitle( "\(item) ▾", for: .normal)
+        }
     }
     
     
@@ -41,6 +51,12 @@ class EventTaggingViewController: UIViewController {
             toggleButton.setTitle("Start", for: .normal)
         }
     }
+    
+    
+    @IBAction func showList(_ sender: Any) {
+        dropDown.show()
+    }
+    
     
     @IBAction func reset(sender: AnyObject) {
         displayTimeLabel.text = "00:00:00"

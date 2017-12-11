@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-Regular.ttf">
+            <string>Montserrat-Regular</string>
+        </array>
+        <array key="fontawesome-webfont.ttf">
+            <string>FontAwesome</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="zEI-Bk-40Q" customClass="SectionHeaderView" customModule="Smartshirt_Companion_App" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ICON" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jup-CS-84I">
+                    <rect key="frame" x="16" y="335" width="42.5" height="17"/>
+                    <fontDescription key="fontDescription" name="FontAwesome" family="FontAwesome" pointSize="17"/>
+                    <color key="textColor" red="1" green="0.46274509800000002" blue="0.36862745099999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LABEL" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WeP-ch-SB8">
+                    <rect key="frame" x="70.5" y="333" width="53.5" height="21"/>
+                    <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="17"/>
+                    <color key="textColor" red="1" green="0.46274509800000002" blue="0.36862745099999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="jup-CS-84I" firstAttribute="centerY" secondItem="hEs-Lj-bXQ" secondAttribute="centerY" id="0cl-8b-b2X"/>
+                <constraint firstItem="WeP-ch-SB8" firstAttribute="leading" secondItem="jup-CS-84I" secondAttribute="trailing" constant="12" id="BCa-pe-N0Q"/>
+                <constraint firstItem="jup-CS-84I" firstAttribute="leading" secondItem="hEs-Lj-bXQ" secondAttribute="leading" constant="16" id="b4G-vK-s4h"/>
+                <constraint firstItem="WeP-ch-SB8" firstAttribute="centerY" secondItem="hEs-Lj-bXQ" secondAttribute="centerY" id="cv2-uf-lnv"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="hEs-Lj-bXQ"/>
+            <connections>
+                <outlet property="icon" destination="jup-CS-84I" id="zHp-uI-r5o"/>
+                <outlet property="label" destination="WeP-ch-SB8" id="E2Z-Ph-WNF"/>
+            </connections>
+            <point key="canvasLocation" x="68" y="72"/>
+        </view>
+    </objects>
+</document>

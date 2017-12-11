@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -51,7 +52,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <segue destination="Ks5-1C-jPU" kind="show" id="N8T-xe-du5"/>
+                                    <segue destination="Kz9-Bw-8l8" kind="show" id="DT4-Ju-DDV"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email Address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hUQ-vs-2hr">
@@ -123,14 +124,103 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="25" y="27"/>
+            <point key="canvasLocation" x="-738" y="27"/>
+        </scene>
+        <!--Menu Controller-->
+        <scene sceneID="KO8-wZ-XF9">
+            <objects>
+                <viewController id="Kz9-Bw-8l8" customClass="MenuController" customModule="Smartshirt_Companion_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gek-mH-EKE">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aeo-bD-Zlr">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <connections>
+                                    <segue destination="Ks5-1C-jPU" kind="embed" id="tkX-bx-NbU"/>
+                                </connections>
+                            </containerView>
+                            <view alpha="0.0" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mfs-iq-o4k">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" red="0.23921568630000001" green="0.25098039220000001" blue="0.35686274509999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="lxf-ca-xkS" appends="YES" id="bND-uU-jKi"/>
+                                </connections>
+                            </view>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rDO-N8-sGW">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="0.0"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="cAV-uo-q9u">
+                                        <rect key="frame" x="59" y="39" width="257" height="0.0"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" id="OLa-JQ-2U0"/>
+                                        </constraints>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aJr-9E-uL4">
+                                        <rect key="frame" x="0.0" y="19" width="49" height="49"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="49" id="RmC-H0-lTc"/>
+                                            <constraint firstAttribute="width" constant="49" id="pMC-JA-0Xh"/>
+                                        </constraints>
+                                        <state key="normal" image="Exhibition Preview"/>
+                                        <connections>
+                                            <action selector="dismissMenu:" destination="Kz9-Bw-8l8" eventType="touchUpInside" id="wPi-QZ-nCg"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.23921568630000001" green="0.25098039220000001" blue="0.35686274509999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" id="0a4-5k-hpy"/>
+                                    <constraint firstAttribute="trailing" secondItem="cAV-uo-q9u" secondAttribute="trailing" constant="59" id="E61-tj-zWu"/>
+                                    <constraint firstItem="aJr-9E-uL4" firstAttribute="top" secondItem="rDO-N8-sGW" secondAttribute="topMargin" constant="-9" id="PG6-GF-9xf"/>
+                                    <constraint firstItem="aJr-9E-uL4" firstAttribute="leading" secondItem="rDO-N8-sGW" secondAttribute="leading" id="SR2-OG-bB6"/>
+                                    <constraint firstItem="cAV-uo-q9u" firstAttribute="leading" secondItem="rDO-N8-sGW" secondAttribute="leading" constant="59" id="jZo-1X-qOO"/>
+                                    <constraint firstItem="cAV-uo-q9u" firstAttribute="top" secondItem="rDO-N8-sGW" secondAttribute="topMargin" constant="11" id="lEe-nZ-YuT"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="rDO-N8-sGW" firstAttribute="top" secondItem="gek-mH-EKE" secondAttribute="top" id="0nF-Vy-dIe"/>
+                            <constraint firstAttribute="trailing" secondItem="aeo-bD-Zlr" secondAttribute="trailing" id="4S3-aE-S0i"/>
+                            <constraint firstItem="TVO-W9-wwD" firstAttribute="trailing" secondItem="rDO-N8-sGW" secondAttribute="trailing" id="55i-bU-Jel"/>
+                            <constraint firstItem="aeo-bD-Zlr" firstAttribute="top" secondItem="rDO-N8-sGW" secondAttribute="bottom" id="IAC-Mo-Bmx"/>
+                            <constraint firstItem="aeo-bD-Zlr" firstAttribute="height" secondItem="gek-mH-EKE" secondAttribute="height" id="S1q-Xt-oOT"/>
+                            <constraint firstItem="Mfs-iq-o4k" firstAttribute="bottom" secondItem="aeo-bD-Zlr" secondAttribute="bottom" id="WH0-Ji-as2"/>
+                            <constraint firstItem="Mfs-iq-o4k" firstAttribute="leading" secondItem="aeo-bD-Zlr" secondAttribute="leading" id="WvE-mV-3ex"/>
+                            <constraint firstItem="aeo-bD-Zlr" firstAttribute="width" secondItem="gek-mH-EKE" secondAttribute="width" id="fND-nu-7uL"/>
+                            <constraint firstItem="aeo-bD-Zlr" firstAttribute="leading" secondItem="gek-mH-EKE" secondAttribute="leading" id="l2w-ew-mK9"/>
+                            <constraint firstItem="Mfs-iq-o4k" firstAttribute="top" secondItem="aeo-bD-Zlr" secondAttribute="top" id="nXs-iy-aAD"/>
+                            <constraint firstItem="Mfs-iq-o4k" firstAttribute="trailing" secondItem="aeo-bD-Zlr" secondAttribute="trailing" id="oLR-hY-vkm"/>
+                            <constraint firstItem="rDO-N8-sGW" firstAttribute="leading" secondItem="TVO-W9-wwD" secondAttribute="leading" id="vhF-kP-QZu"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="TVO-W9-wwD"/>
+                    </view>
+                    <connections>
+                        <outlet property="contentView" destination="aeo-bD-Zlr" id="01E-qt-QfY"/>
+                        <outlet property="contentViewOverlap" destination="IAC-Mo-Bmx" id="1u9-MY-SEe"/>
+                        <outlet property="overlayView" destination="Mfs-iq-o4k" id="P0c-8a-Sja"/>
+                        <outlet property="stackView" destination="cAV-uo-q9u" id="sy7-fR-fTX"/>
+                        <outlet property="stackViewContainerHeight" destination="0a4-5k-hpy" id="oz9-64-gxP"/>
+                        <outlet property="stackViewHeight" destination="OLa-JQ-2U0" id="mVW-DZ-kZU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="srt-UJ-M7J" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="lxf-ca-xkS">
+                    <connections>
+                        <action selector="dismissMenu:" destination="Kz9-Bw-8l8" id="Yzy-aZ-Krk"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="44" y="27"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="8JZ-LY-5Hg">
             <objects>
                 <tabBarController id="Ks5-1C-jPU" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="Nwm-l3-wUq"/>
-                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="cjG-jY-hpd">
+                    <tabBar key="tabBar" hidden="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="cjG-jY-hpd">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -153,9 +243,17 @@
                     <tabBarItem key="tabBarItem" title="EVENT TAGGING" id="QIn-Am-p7v"/>
                     <toolbarItems/>
                     <nil key="simulatedBottomBarMetrics"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="G3a-lH-DYG">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="G3a-lH-DYG">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.23921568627450979" green="0.25098039215686274" blue="0.35686274509803922" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="18"/>
+                            <color key="textColor" red="0.98823529409999999" green="0.98823529409999999" blue="0.98823529409999999" alpha="1" colorSpace="calibratedRGB"/>
+                        </textAttributes>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="24"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -166,18 +264,18 @@
             </objects>
             <point key="canvasLocation" x="1588" y="-820"/>
         </scene>
-        <!--Event Tagging View Controller-->
+        <!--EVENT TAGGING-->
         <scene sceneID="V8W-eK-iUl">
             <objects>
                 <viewController id="aKC-Mm-4qH" customClass="EventTaggingViewController" customModule="Smartshirt_Companion_App" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="xRp-zU-la7">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00.00" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NSS-pX-ZAR">
-                                <rect key="frame" x="22.5" y="154" width="330" height="127"/>
+                                <rect key="frame" x="22.5" y="90" width="330" height="100"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="127" id="TI2-Ou-Zga"/>
+                                    <constraint firstAttribute="height" constant="100" id="TI2-Ou-Zga"/>
                                     <constraint firstAttribute="width" constant="330" id="zg0-Fk-hri"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="70"/>
@@ -185,13 +283,14 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="100" translatesAutoresizingMaskIntoConstraints="NO" id="YJX-6B-oRG">
-                                <rect key="frame" x="24" y="305" width="327" height="42"/>
+                                <rect key="frame" x="24" y="214" width="327" height="42"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y3u-fz-RDD" customClass="GeneralUIButton" customModule="Smartshirt_Companion_App" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="113.5" height="42"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="42" id="lU0-bw-tUG"/>
                                         </constraints>
+                                        <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="14"/>
                                         <state key="normal" title="Reset"/>
                                         <connections>
                                             <action selector="resetWithSender:" destination="aKC-Mm-4qH" eventType="touchUpInside" id="xgK-bI-yfM"/>
@@ -202,6 +301,7 @@
                                         <constraints>
                                             <constraint firstAttribute="height" constant="42" id="jMj-ub-TSa"/>
                                         </constraints>
+                                        <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="14"/>
                                         <state key="normal" title="Start"/>
                                         <connections>
                                             <action selector="startWithSender:" destination="aKC-Mm-4qH" eventType="touchUpInside" id="dRb-i1-UkN"/>
@@ -210,52 +310,92 @@
                                 </subviews>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="EVENT DETAILS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="djK-NH-luN">
-                                <rect key="frame" x="22.5" y="371" width="108" height="17.5"/>
+                                <rect key="frame" x="22.5" y="280" width="108" height="17.5"/>
                                 <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="14"/>
                                 <color key="textColor" red="1" green="0.46274509800000002" blue="0.36862745099999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lu5-Pd-THc">
-                                <rect key="frame" x="24" y="396.5" width="327" height="42"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lu5-Pd-THc">
+                                <rect key="frame" x="24" y="305.5" width="327" height="42"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="42" id="ouh-2w-exz"/>
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ADDITIONAL COMMENTS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J0H-7e-yje">
-                                <rect key="frame" x="22" y="463" width="176.5" height="17.5"/>
+                                <rect key="frame" x="22" y="395.5" width="176.5" height="17.5"/>
                                 <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="14"/>
                                 <color key="textColor" red="1" green="0.46274509800000002" blue="0.36862745099999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pms-2I-vxW">
+                                <rect key="frame" x="22.5" y="311" width="104" height="30"/>
+                                <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="14"/>
+                                <state key="normal" title="Choose event ▾">
+                                    <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="showList:" destination="aKC-Mm-4qH" eventType="touchUpInside" id="TuF-hN-B8t"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Tem-UA-Buh">
+                                <rect key="frame" x="24" y="425" width="327" height="88"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="12"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cUB-cp-TLy" customClass="GeneralUIButton" customModule="Smartshirt_Companion_App" customModuleProvider="target">
+                                <rect key="frame" x="62.5" y="537" width="250" height="42"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="42" id="jI1-Rw-YAe"/>
+                                    <constraint firstAttribute="width" constant="250" id="lWp-ZJ-dS2"/>
+                                </constraints>
+                                <state key="normal" title="Submit"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="pms-2I-vxW" firstAttribute="leading" secondItem="djK-NH-luN" secondAttribute="leading" id="6Af-Ay-c1I"/>
                             <constraint firstItem="fwy-XR-PD6" firstAttribute="trailing" secondItem="lu5-Pd-THc" secondAttribute="trailing" constant="24" id="BWQ-9U-CKE"/>
                             <constraint firstItem="NSS-pX-ZAR" firstAttribute="top" secondItem="fwy-XR-PD6" secondAttribute="top" constant="90" id="EMF-R7-fFT"/>
                             <constraint firstItem="NSS-pX-ZAR" firstAttribute="centerX" secondItem="fwy-XR-PD6" secondAttribute="centerX" id="Erx-hV-h6A"/>
+                            <constraint firstItem="fwy-XR-PD6" firstAttribute="trailing" secondItem="Tem-UA-Buh" secondAttribute="trailing" constant="24" id="HD0-Zf-kki"/>
+                            <constraint firstItem="cUB-cp-TLy" firstAttribute="centerX" secondItem="fwy-XR-PD6" secondAttribute="centerX" id="OVl-Bb-qJm"/>
                             <constraint firstItem="djK-NH-luN" firstAttribute="leading" secondItem="NSS-pX-ZAR" secondAttribute="leading" id="Xsx-By-fR4"/>
                             <constraint firstItem="fwy-XR-PD6" firstAttribute="trailing" secondItem="YJX-6B-oRG" secondAttribute="trailing" constant="24" id="Y0m-pC-aID"/>
+                            <constraint firstItem="pms-2I-vxW" firstAttribute="centerY" secondItem="lu5-Pd-THc" secondAttribute="centerY" id="a6X-7G-09d"/>
+                            <constraint firstItem="Tem-UA-Buh" firstAttribute="top" secondItem="J0H-7e-yje" secondAttribute="bottom" constant="12" id="aYd-dh-nDq"/>
+                            <constraint firstItem="Tem-UA-Buh" firstAttribute="leading" secondItem="fwy-XR-PD6" secondAttribute="leading" constant="24" id="amg-7y-Eoq"/>
                             <constraint firstItem="YJX-6B-oRG" firstAttribute="leading" secondItem="fwy-XR-PD6" secondAttribute="leading" constant="24" id="dje-AI-Ohw"/>
+                            <constraint firstItem="cUB-cp-TLy" firstAttribute="top" secondItem="Tem-UA-Buh" secondAttribute="bottom" constant="24" id="fiK-Vx-pOP"/>
                             <constraint firstItem="djK-NH-luN" firstAttribute="top" secondItem="y3u-fz-RDD" secondAttribute="bottom" constant="24" id="hY1-3a-usJ"/>
+                            <constraint firstItem="fwy-XR-PD6" firstAttribute="bottom" secondItem="cUB-cp-TLy" secondAttribute="bottom" constant="24" id="kdB-sY-6ea"/>
                             <constraint firstItem="lu5-Pd-THc" firstAttribute="top" secondItem="djK-NH-luN" secondAttribute="bottom" constant="8" id="koj-ck-8UC"/>
-                            <constraint firstItem="J0H-7e-yje" firstAttribute="top" secondItem="lu5-Pd-THc" secondAttribute="bottom" constant="24" id="pb6-7o-g5T"/>
+                            <constraint firstItem="J0H-7e-yje" firstAttribute="top" secondItem="lu5-Pd-THc" secondAttribute="bottom" constant="48" id="pb6-7o-g5T"/>
                             <constraint firstItem="YJX-6B-oRG" firstAttribute="top" secondItem="NSS-pX-ZAR" secondAttribute="bottom" constant="24" id="ps4-wM-R9i"/>
                             <constraint firstItem="J0H-7e-yje" firstAttribute="leading" secondItem="djK-NH-luN" secondAttribute="leading" id="sUJ-yM-orf"/>
                             <constraint firstItem="lu5-Pd-THc" firstAttribute="leading" secondItem="fwy-XR-PD6" secondAttribute="leading" constant="24" id="uFk-6z-WGh"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="fwy-XR-PD6"/>
                     </view>
-                    <navigationItem key="navigationItem" id="BQl-mk-Mdc"/>
+                    <navigationItem key="navigationItem" title="EVENT TAGGING" id="BQl-mk-Mdc">
+                        <barButtonItem key="leftBarButtonItem" image="menu" id="E0g-eC-uP1">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="openMenu:" destination="aKC-Mm-4qH" id="d4N-f2-C1c"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="anchorView" destination="lu5-Pd-THc" id="dll-OF-cK6"/>
                         <outlet property="displayTimeLabel" destination="NSS-pX-ZAR" id="gXs-Ir-Odi"/>
+                        <outlet property="eventButton" destination="pms-2I-vxW" id="Oj7-R6-eeE"/>
                         <outlet property="toggleButton" destination="tgz-hx-17p" id="KXk-vr-lAt"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vJi-cZ-YSy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2366" y="-821"/>
+            <point key="canvasLocation" x="2365.5999999999999" y="-821.73913043478262"/>
         </scene>
         <!--LOG-->
         <scene sceneID="KHe-0t-Tcp">
@@ -264,9 +404,17 @@
                     <tabBarItem key="tabBarItem" title="LOG" id="ELN-fU-Qbc"/>
                     <toolbarItems/>
                     <nil key="simulatedBottomBarMetrics"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="4za-CX-sQu">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="4za-CX-sQu">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.23921568630000001" green="0.25098039220000001" blue="0.35686274509999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="18"/>
+                            <color key="textColor" red="0.9882352941176471" green="0.9882352941176471" blue="0.9882352941176471" alpha="1" colorSpace="calibratedRGB"/>
+                        </textAttributes>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="24"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -284,9 +432,17 @@
                     <tabBarItem key="tabBarItem" title="EQUIPMENT" id="2TG-P3-Bjz"/>
                     <toolbarItems/>
                     <nil key="simulatedBottomBarMetrics"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="9YW-BA-uPF">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="9YW-BA-uPF">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.23921568627450979" green="0.25098039215686274" blue="0.35686274509803922" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="18"/>
+                            <color key="textColor" red="0.98823529409999999" green="0.98823529409999999" blue="0.98823529409999999" alpha="1" colorSpace="calibratedRGB"/>
+                        </textAttributes>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="24"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -297,33 +453,92 @@
             </objects>
             <point key="canvasLocation" x="1588" y="-1623"/>
         </scene>
-        <!--View Controller-->
+        <!--EQUIPMENT-->
         <scene sceneID="SOc-Yn-8aG">
             <objects>
-                <viewController id="Re4-SB-ZlY" sceneMemberID="viewController">
+                <viewController id="Re4-SB-ZlY" customClass="EquipmentViewController" customModule="Smartshirt_Companion_App" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="xGn-Vb-FJL">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="mPm-mK-28u">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="equipmentCell" rowHeight="100" id="DSA-CP-01b" customClass="EquipmentTableViewCell" customModule="Smartshirt_Companion_App" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="100"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="DSA-CP-01b" id="KS6-P4-BkO">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EE2-eL-pvo">
+                                                    <rect key="frame" x="8" y="8" width="359" height="83.5"/>
+                                                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </view>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="EE2-eL-pvo" secondAttribute="bottom" constant="8" id="80W-60-fv2"/>
+                                                <constraint firstItem="EE2-eL-pvo" firstAttribute="top" secondItem="KS6-P4-BkO" secondAttribute="top" constant="8" id="H5c-0l-Lbo"/>
+                                                <constraint firstItem="EE2-eL-pvo" firstAttribute="leading" secondItem="KS6-P4-BkO" secondAttribute="leading" constant="8" id="dQi-Z8-cUh"/>
+                                                <constraint firstAttribute="trailing" secondItem="EE2-eL-pvo" secondAttribute="trailing" constant="8" id="wjN-ss-Gq9"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <connections>
+                                            <outlet property="cardView" destination="EE2-eL-pvo" id="JPB-5D-RLC"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="Re4-SB-ZlY" id="ARX-ac-El2"/>
+                                    <outlet property="delegate" destination="Re4-SB-ZlY" id="Tf4-Lc-cz7"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.94901960784313721" green="0.94901960784313721" blue="0.94901960784313721" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="mPm-mK-28u" firstAttribute="leading" secondItem="6aA-7e-wdS" secondAttribute="leading" id="0z0-b4-oKx"/>
+                            <constraint firstItem="6aA-7e-wdS" firstAttribute="trailing" secondItem="mPm-mK-28u" secondAttribute="trailing" id="LYi-Hi-TD7"/>
+                            <constraint firstItem="mPm-mK-28u" firstAttribute="top" secondItem="6aA-7e-wdS" secondAttribute="top" id="PmL-pa-4O9"/>
+                            <constraint firstItem="6aA-7e-wdS" firstAttribute="bottom" secondItem="mPm-mK-28u" secondAttribute="bottom" id="XcH-im-vkO"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6aA-7e-wdS"/>
                     </view>
-                    <navigationItem key="navigationItem" id="B2h-Bf-qDx"/>
+                    <navigationItem key="navigationItem" title="EQUIPMENT" id="B2h-Bf-qDx">
+                        <barButtonItem key="leftBarButtonItem" image="menu" id="5bc-fc-SVA">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="openMenu:" destination="Re4-SB-ZlY" id="Jtv-cQ-WQ0"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="tableview" destination="mPm-mK-28u" id="Oor-yI-mU0"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ed5-RM-iaA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2366" y="-1623"/>
         </scene>
-        <!--View Controller-->
+        <!--LOG-->
         <scene sceneID="DqR-5w-RoK">
             <objects>
                 <viewController id="CcX-P9-lB8" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ddG-yq-Dzy">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="oqp-kr-WwL"/>
                     </view>
-                    <navigationItem key="navigationItem" id="VqI-Mv-CJv"/>
+                    <navigationItem key="navigationItem" title="LOG" id="VqI-Mv-CJv">
+                        <barButtonItem key="leftBarButtonItem" image="menu" id="KSQ-r2-7u0">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="openMenu:" destination="CcX-P9-lB8" id="qMx-3N-148"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="biB-4q-Mah" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -336,9 +551,17 @@
                     <tabBarItem key="tabBarItem" title="SETTINGS" id="zDJ-cp-TWe"/>
                     <toolbarItems/>
                     <nil key="simulatedBottomBarMetrics"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="atE-tJ-RIP">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="atE-tJ-RIP">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.23921568630000001" green="0.25098039220000001" blue="0.35686274509999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="18"/>
+                            <color key="textColor" red="0.98823529409999999" green="0.98823529409999999" blue="0.98823529409999999" alpha="1" colorSpace="calibratedRGB"/>
+                        </textAttributes>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="24"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -349,21 +572,32 @@
             </objects>
             <point key="canvasLocation" x="1588" y="882"/>
         </scene>
-        <!--View Controller-->
+        <!--SETTINGS-->
         <scene sceneID="kcA-1e-oYw">
             <objects>
                 <viewController id="Td9-lp-19a" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="tC7-mS-ZEI">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="dUg-va-iOk"/>
                     </view>
-                    <navigationItem key="navigationItem" id="J6m-Sn-40w"/>
+                    <navigationItem key="navigationItem" title="SETTINGS" id="J6m-Sn-40w">
+                        <barButtonItem key="leftBarButtonItem" image="menu" id="IDq-ns-qno">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="openMenu:" destination="Td9-lp-19a" id="BH7-BW-Xtw"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nq0-q8-JZg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2366" y="882"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Exhibition Preview" width="12" height="13"/>
+        <image name="menu" width="18" height="13"/>
+    </resources>
 </document>
