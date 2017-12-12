@@ -12,10 +12,11 @@ class LogViewController: UIViewController, UITableViewDelegate, UITableViewDataS
     
     @IBOutlet weak var tableview: UITableView!
     
-    let questions = [ "Describe your child's mood",
-                      "Describe your child's activity level",
-                      "Describe any unusual behaviour",
-                      "Additional Comments" ]
+    let questions = [ "Approximately how long did your child sleep last night?",
+                      "Has today been a typical day for your child? If no, please explain.",
+                      "Has today been a typical day for you? If no, please explain.",
+                      "Briefly summarize your child's behavior today.",
+                      "Briefly summarize any issues or concerns regarding your child's behavior today." ]
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,14 +28,14 @@ class LogViewController: UIViewController, UITableViewDelegate, UITableViewDataS
     }
     
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-        return 40
+        return 48
     }
-    
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         if section < questions.count {
             let bundle = Bundle(for: type(of: self))
             if let nib = UINib(nibName: "Log Section Header", bundle: bundle).instantiate(withOwner: nil, options: nil)[0] as? SectionHeaderView {
                 nib.label.text = questions[section].uppercased()
+                nib.label.font = UX.Fonts.BoldFont
                 return nib
             }
         }
@@ -51,7 +52,7 @@ class LogViewController: UIViewController, UITableViewDelegate, UITableViewDataS
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         if indexPath.section < questions.count {
-            return 150
+            return 75
         }
         return 66
     }

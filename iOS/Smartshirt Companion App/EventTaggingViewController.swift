@@ -29,7 +29,7 @@ class EventTaggingViewController: UIViewController {
         // The view to which the drop down will appear on
         dropDown.anchorView = anchorView
 //        // The list of items to display. Can be changed dynamically
-        dropDown.dataSource = ["Playtime", "Naptime", "Potty Time", "Diaper Change", "Nursing", "Bathtime", "Other"]
+        dropDown.dataSource = ["Playtime", "Naptime", "Bathroom", "Diaper Change", "Nursing", "Bathtime", "Other"]
         if let font = UX.Fonts.RegularFont {
             dropDown.textFont = font
             dropDown.textColor = UX.Colors.paleRed
@@ -56,7 +56,7 @@ class EventTaggingViewController: UIViewController {
             let actionSelector: Selector = #selector(EventTaggingViewController.updateTime)
             timer = Timer.scheduledTimer(timeInterval: 0.01, target:self, selector:actionSelector, userInfo: nil, repeats: true)
             startTime = NSDate.timeIntervalSinceReferenceDate
-            toggleButton.setTitle("Pause", for: .normal)
+            toggleButton.setTitle("Stop", for: .normal)
         } else {
             timer.invalidate()
             toggleButton.setTitle("Start", for: .normal)

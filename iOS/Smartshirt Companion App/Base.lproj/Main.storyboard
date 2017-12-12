@@ -229,7 +229,6 @@
                         <segue destination="fSx-Fl-VPI" kind="relationship" relationship="viewControllers" id="DD4-rt-6hR"/>
                         <segue destination="AdF-tc-UhI" kind="relationship" relationship="viewControllers" id="CWw-2k-8ta"/>
                         <segue destination="bX3-sx-q4W" kind="relationship" relationship="viewControllers" id="ZHz-b8-mUu"/>
-                        <segue destination="2rd-Wd-Tiu" kind="relationship" relationship="viewControllers" id="Ubu-Xs-RwP"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rd2-oC-o77" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -285,19 +284,8 @@
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="100" translatesAutoresizingMaskIntoConstraints="NO" id="YJX-6B-oRG">
                                 <rect key="frame" x="24" y="214" width="327" height="42"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y3u-fz-RDD" customClass="GeneralUIButton" customModule="Smartshirt_Companion_App" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="113.5" height="42"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="42" id="lU0-bw-tUG"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="14"/>
-                                        <state key="normal" title="Reset"/>
-                                        <connections>
-                                            <action selector="resetWithSender:" destination="aKC-Mm-4qH" eventType="touchUpInside" id="xgK-bI-yfM"/>
-                                        </connections>
-                                    </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tgz-hx-17p" customClass="GeneralUIButton" customModule="Smartshirt_Companion_App" customModuleProvider="target">
-                                        <rect key="frame" x="213.5" y="0.0" width="113.5" height="42"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="113.5" height="42"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="42" id="jMj-ub-TSa"/>
                                         </constraints>
@@ -305,6 +293,17 @@
                                         <state key="normal" title="Start"/>
                                         <connections>
                                             <action selector="startWithSender:" destination="aKC-Mm-4qH" eventType="touchUpInside" id="dRb-i1-UkN"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y3u-fz-RDD" customClass="GeneralUIButton" customModule="Smartshirt_Companion_App" customModuleProvider="target">
+                                        <rect key="frame" x="213.5" y="0.0" width="113.5" height="42"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="42" id="lU0-bw-tUG"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="14"/>
+                                        <state key="normal" title="Reset"/>
+                                        <connections>
+                                            <action selector="resetWithSender:" destination="aKC-Mm-4qH" eventType="touchUpInside" id="xgK-bI-yfM"/>
                                         </connections>
                                     </button>
                                 </subviews>
