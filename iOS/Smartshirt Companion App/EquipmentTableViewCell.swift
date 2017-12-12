@@ -11,6 +11,7 @@ import UIKit
 class EquipmentTableViewCell: UITableViewCell {
 
     @IBOutlet weak var cardView: UIView!
+    @IBOutlet weak var stackview: UIStackView!
     
     override func awakeFromNib() {
         super.awakeFromNib()

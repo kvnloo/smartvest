@@ -11,9 +11,9 @@ import UIKit
 class EquipmentViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
     @IBOutlet weak var tableview: UITableView!
-    let icons = ["", "", ""]
-    let equipment = ["Heart Scanner", "Microphone", "GPS"] // Uses an array so that this can later be gotten through an API Call
-    let status    = [true, true, true]
+    let icons = ["", ""]
+    let equipment = ["ECG SENSOR", "MICROPHONE"] // Uses an array so that this can later be gotten through an API Call
+    let status    = [50, 100]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -48,14 +48,35 @@ class EquipmentViewController: UIViewController, UITableViewDelegate, UITableVie
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        if let cell = tableView.dequeueReusableCell(withIdentifier: "equipmentCell") {
+        if let cell = tableView.dequeueReusableCell(withIdentifier: "equipmentCell") as? EquipmentTableViewCell {
             cell.contentView.backgroundColor = UIColor.clear
-            
-            if status[indexPath.section] {
-                
+            var tintcolor: UIColor
+            if status[indexPath.section] <= 25 {
+                cell.stackview.addArrangedSubview(UIImageView(image: #imageLiteral(resourceName: "Ellipse")))
+                tintcolor = UIColor.red
+            } else if status[indexPath.section] <= 50 {
+                cell.stackview.addArrangedSubview(UIImageView(image: #imageLiteral(resourceName: "Ellipse")))
+                cell.stackview.addArrangedSubview(UIImageView(image: #imageLiteral(resourceName: "Ellipse")))
+                tintcolor = UIColor.orange
+            } else if status[indexPath.section] <= 75 {
+                cell.stackview.addArrangedSubview(UIImageView(image: #imageLiteral(resourceName: "Ellipse")))
+                cell.stackview.addArrangedSubview(UIImageView(image: #imageLiteral(resourceName: "Ellipse")))
+                cell.stackview.addArrangedSubview(UIImageView(image: #imageLiteral(resourceName: "Ellipse")))
+                tintcolor = UIColor.yellow
             } else {
-                
+                cell.stackview.addArrangedSubview(UIImageView(image: #imageLiteral(resourceName: "Ellipse")))
+                cell.stackview.addArrangedSubview(UIImageView(image: #imageLiteral(resourceName: "Ellipse")))
+                cell.stackview.addArrangedSubview(UIImageView(image: #imageLiteral(resourceName: "Ellipse")))
+                cell.stackview.addArrangedSubview(UIImageView(image: #imageLiteral(resourceName: "Ellipse")))
+                tintcolor = UIColor.green
             }
+            for imageview in cell.stackview.subviews {
+                if let imageview = imageview as? UIImageView {
+                    imageview.tintColor = tintcolor
+                    imageview.contentMode = .scaleAspectFit
+                }
+            }
+            print(cell.stackview.subviews.count)
             return cell
         }
         return UITableViewCell()

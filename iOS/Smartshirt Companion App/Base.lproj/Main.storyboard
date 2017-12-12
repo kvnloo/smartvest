@@ -481,7 +481,31 @@
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EE2-eL-pvo">
                                                     <rect key="frame" x="8" y="8" width="359" height="83.5"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Connection Strength" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Iqx-3D-cP0">
+                                                            <rect key="frame" x="8" y="31" width="145" height="21"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="21" id="Ajo-b7-Bns"/>
+                                                            </constraints>
+                                                            <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="14"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <stackView opaque="NO" contentMode="left" ambiguous="YES" distribution="fillProportionally" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Z7a-UE-o4V">
+                                                            <rect key="frame" x="159" y="31.5" width="192" height="21"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="21" id="Pro-qH-4Ne"/>
+                                                            </constraints>
+                                                        </stackView>
+                                                    </subviews>
                                                     <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <constraints>
+                                                        <constraint firstItem="Iqx-3D-cP0" firstAttribute="leading" secondItem="EE2-eL-pvo" secondAttribute="leading" constant="8" id="1qD-BY-tTM"/>
+                                                        <constraint firstItem="Z7a-UE-o4V" firstAttribute="height" secondItem="Iqx-3D-cP0" secondAttribute="height" id="MoJ-cX-Pwq"/>
+                                                        <constraint firstItem="Z7a-UE-o4V" firstAttribute="centerY" secondItem="EE2-eL-pvo" secondAttribute="centerY" id="OUw-hE-M3z"/>
+                                                        <constraint firstItem="Z7a-UE-o4V" firstAttribute="leading" secondItem="Iqx-3D-cP0" secondAttribute="trailing" constant="12" id="hZL-Pz-Efc"/>
+                                                        <constraint firstItem="Iqx-3D-cP0" firstAttribute="centerY" secondItem="EE2-eL-pvo" secondAttribute="centerY" id="s7S-Ro-Ky8"/>
+                                                    </constraints>
                                                 </view>
                                             </subviews>
                                             <constraints>
@@ -494,6 +518,7 @@
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <connections>
                                             <outlet property="cardView" destination="EE2-eL-pvo" id="JPB-5D-RLC"/>
+                                            <outlet property="stackview" destination="Z7a-UE-o4V" id="AbI-wv-C26"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>

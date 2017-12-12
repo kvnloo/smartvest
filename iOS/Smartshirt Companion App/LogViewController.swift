@@ -34,7 +34,7 @@ class LogViewController: UIViewController, UITableViewDelegate, UITableViewDataS
         if section < questions.count {
             let bundle = Bundle(for: type(of: self))
             if let nib = UINib(nibName: "Log Section Header", bundle: bundle).instantiate(withOwner: nil, options: nil)[0] as? SectionHeaderView {
-                nib.label.text = questions[section]
+                nib.label.text = questions[section].uppercased()
                 return nib
             }
         }
