@@ -37,6 +37,8 @@
 		0A3D050A1FDF4B7700A2EAD7 /* Montserrat-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0A3645091FDE6D550045C402 /* Montserrat-Italic.ttf */; };
 		0A3D050B1FDF4B7700A2EAD7 /* Montserrat-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0A36450A1FDE6D550045C402 /* Montserrat-SemiBoldItalic.ttf */; };
 		0A3D050C1FDF4B7700A2EAD7 /* Montserrat-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0A36450B1FDE6D550045C402 /* Montserrat-ExtraBoldItalic.ttf */; };
+		0A3D050E1FDF515F00A2EAD7 /* LogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3D050D1FDF515F00A2EAD7 /* LogViewController.swift */; };
+		0A3D05101FDF52F000A2EAD7 /* Log Section Header.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A3D050F1FDF52F000A2EAD7 /* Log Section Header.xib */; };
 		0A69B9EF1FDE52DE009D25E4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A69B9EE1FDE52DE009D25E4 /* AppDelegate.swift */; };
 		0A69B9F11FDE52DE009D25E4 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A69B9F01FDE52DE009D25E4 /* LoginViewController.swift */; };
 		0A69B9F41FDE52DE009D25E4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A69B9F21FDE52DE009D25E4 /* Main.storyboard */; };
@@ -97,6 +99,8 @@
 		0A3D04F51FDF3BBB00A2EAD7 /* MenuController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuController.swift; sourceTree = "<group>"; };
 		0A3D04F71FDF3BE300A2EAD7 /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
 		0A3D04F91FDF3C4600A2EAD7 /* UIStoryboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIStoryboard.swift; sourceTree = "<group>"; };
+		0A3D050D1FDF515F00A2EAD7 /* LogViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogViewController.swift; sourceTree = "<group>"; };
+		0A3D050F1FDF52F000A2EAD7 /* Log Section Header.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = "Log Section Header.xib"; sourceTree = "<group>"; };
 		0A69B9EB1FDE52DE009D25E4 /* Smartshirt Companion App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Smartshirt Companion App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A69B9EE1FDE52DE009D25E4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0A69B9F01FDE52DE009D25E4 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -209,6 +213,7 @@
 		0A69B9ED1FDE52DE009D25E4 /* Smartshirt Companion App */ = {
 			isa = PBXGroup;
 			children = (
+				0A3D050D1FDF515F00A2EAD7 /* LogViewController.swift */,
 				0A3D04F11FDF2F1A00A2EAD7 /* EquipmentTableViewCell.swift */,
 				0A3D04EA1FDF288C00A2EAD7 /* EquipmentViewController.swift */,
 				0A69B9EE1FDE52DE009D25E4 /* AppDelegate.swift */,
@@ -217,6 +222,7 @@
 				0A3D04F71FDF3BE300A2EAD7 /* UIViewController.swift */,
 				0A3D04F91FDF3C4600A2EAD7 /* UIStoryboard.swift */,
 				0A3D04EC1FDF29C900A2EAD7 /* Section Header.xib */,
+				0A3D050F1FDF52F000A2EAD7 /* Log Section Header.xib */,
 				0A3D04F31FDF397600A2EAD7 /* SectionHeaderView.swift */,
 				0A3D04F51FDF3BBB00A2EAD7 /* MenuController.swift */,
 				0A3645221FDE78CC0045C402 /* EventTaggingViewController.swift */,
@@ -412,6 +418,7 @@
 				0A3D05061FDF4B7700A2EAD7 /* Montserrat-ExtraLightItalic.ttf in Resources */,
 				0A3D05051FDF4B7700A2EAD7 /* Montserrat-SemiBold.ttf in Resources */,
 				0A69B9F41FDE52DE009D25E4 /* Main.storyboard in Resources */,
+				0A3D05101FDF52F000A2EAD7 /* Log Section Header.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -577,6 +584,7 @@
 				0A3D04FA1FDF3C4600A2EAD7 /* UIStoryboard.swift in Sources */,
 				0A3D04F61FDF3BBB00A2EAD7 /* MenuController.swift in Sources */,
 				0A3645211FDE6F880045C402 /* GeneralUIHyperLink.swift in Sources */,
+				0A3D050E1FDF515F00A2EAD7 /* LogViewController.swift in Sources */,
 				0A36451F1FDE6DF00045C402 /* GeneralUIButton.swift in Sources */,
 				0A3D04F81FDF3BE300A2EAD7 /* UIViewController.swift in Sources */,
 				0A3D04F21FDF2F1A00A2EAD7 /* EquipmentTableViewCell.swift in Sources */,

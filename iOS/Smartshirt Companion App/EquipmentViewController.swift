@@ -61,6 +61,10 @@ class EquipmentViewController: UIViewController, UITableViewDelegate, UITableVie
         return UITableViewCell()
     }
     
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return 40
+    }
+    
     
 
     /*

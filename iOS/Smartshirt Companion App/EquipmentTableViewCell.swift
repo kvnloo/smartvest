@@ -20,7 +20,7 @@ class EquipmentTableViewCell: UITableViewCell {
         cardView.layer.shadowColor = UIColor.black.cgColor
         cardView.layer.shadowOpacity = 0.5
         cardView.layer.shadowOffset = CGSize(width: 1, height: 10)
-        cardView.layer.shadowPath = UIBezierPath(rect: self.bounds).cgPath
+        cardView.layer.shadowPath = UIBezierPath(rect: cardView.bounds).cgPath
         cardView.layer.shadowRadius = 1
         cardView.layer.shouldRasterize = true
     }

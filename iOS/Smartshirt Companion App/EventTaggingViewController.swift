@@ -19,6 +19,7 @@ class EventTaggingViewController: UIViewController {
     @IBOutlet weak var anchorView: UIView!
     let dropDown = DropDown()
     @IBOutlet weak var eventButton: UIButton!
+    @IBOutlet weak var textview: UITextView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,10 +34,20 @@ class EventTaggingViewController: UIViewController {
             dropDown.textFont = font
             dropDown.textColor = UX.Colors.paleRed
         }
-        
+        dropDown.backgroundColor = UIColor.white
         dropDown.selectionAction = { [unowned self] (index: Int, item: String) in
             self.eventButton.setTitle( "\(item) ▾", for: .normal)
         }
+        
+        textview.layer.masksToBounds = true
+        textview.layer.cornerRadius = 5
+        textview.layer.shadowColor = UIColor.black.cgColor
+        textview.layer.shadowOpacity = 0.5
+        textview.layer.shadowOffset = CGSize(width: 1, height: 10)
+        textview.layer.shadowPath = UIBezierPath(rect: textview.bounds).cgPath
+        textview.layer.shadowRadius = 1
+        textview.layer.shouldRasterize = true
+        
     }
     
     
@@ -59,7 +70,7 @@ class EventTaggingViewController: UIViewController {
     
     
     @IBAction func reset(sender: AnyObject) {
-        displayTimeLabel.text = "00:00:00"
+        displayTimeLabel.text = "00:00.00"
         timer = Timer()
     }
     
